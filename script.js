@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   function calculatePercentage() {
-    const inputNumber = document.getElementById("inputNumber").value;
+    const inputNumber = Number(document.getElementById("inputNumber").value);
 
-    const inputPercentage = document.getElementById("inputPercentage").value;
-    inputPercentage = inputPercentage / 100.0;
+    const inputPercentage = Number(document.getElementById("inputPercentage").value / 100.0);
 
     const result = inputNumber + inputNumber * inputPercentage;
 
