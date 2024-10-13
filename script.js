@@ -1,5 +1,5 @@
-function calculatePercentage() 
-{
+document.addEventListener("DOMContentLoaded", function () {
+  function calculatePercentage() {
     const inputNumber = document.getElementById("inputNumber").value;
 
     const inputPercentage = document.getElementById("inputPercentage").value;
@@ -8,6 +8,9 @@ function calculatePercentage()
     const result = inputNumber + inputNumber * inputPercentage;
 
     document.getElementById("result").textContent = result;
-}
+  }
 
-document.getElementById("calculateButton").addEventListener("click", calculatePercentage);
+  document
+    .getElementById("calculateButton")
+    .addEventListener("click", calculatePercentage);
+});
