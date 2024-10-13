@@ -10,4 +10,4 @@ function calculatePercentage()
     document.getElementById("result").textContent = result;
 }
 
-document.getElementById("calculateNumber").addEventListener("click", calculatePercentage);
+document.getElementById("calculateButton").addEventListener("click", calculatePercentage);
